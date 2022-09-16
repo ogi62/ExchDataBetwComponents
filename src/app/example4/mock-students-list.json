@@ -1,0 +1,37 @@
+ [
+    {
+      "customerNo": 1,
+      "name": "Rahuld Dravid",
+      "address": ""
+    },
+    {
+        "customerNo": 2,
+        "name": "Rahuld Dravid",
+        "address": ""
+      },
+      {
+        "customerNo": 3,
+        "name": "Rahuld Dravid",
+        "address": ""
+      },
+      {
+        "customerNo": 4,
+        "name": "Rahuld Dravid",
+        "address": ""
+      },
+      {
+        "customerNo": 5,
+        "name": "Rahuld Dravid",
+        "address": ""
+      },
+      {
+        "customerNo": 6,
+        "name": "Rahuld Dravid",
+        "address": ""
+      },
+      {
+        "customerNo": 7,
+        "name": "Rahuld Dravid",
+        "address": ""
+      }
+  ]

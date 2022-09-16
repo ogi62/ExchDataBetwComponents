@@ -12,6 +12,9 @@ import { CustomersListComponent } from './customers/customerList/customersList.c
 import { EditCustomerComponent } from './customers/editCustomer/editCustomer.component';
 import { FormsModule } from '@angular/forms';
 import { ExampleOneComponent } from './example1/example1.component';
+import { ExampleFourComponent } from './example4/example4.component';
+import { University } from './example4/university/university.component';
+import { Student } from './example4/student/student.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ExampleOneComponent } from './example1/example1.component';
     ChildCountComponent,
     CustomersComponent,
     CustomersListComponent,
-    EditCustomerComponent
+    EditCustomerComponent,
+    ExampleFourComponent,
+    University,
+    Student
   ],
   imports: [
     BrowserModule,
