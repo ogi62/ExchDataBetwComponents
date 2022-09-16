@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { GalleryChildComponent } from '../galleryChild/galleryChild.component';
 
 @Component({
@@ -8,6 +8,7 @@ import { GalleryChildComponent } from '../galleryChild/galleryChild.component';
 })
 export class ParentAppComponent {
   @ViewChild(GalleryChildComponent) gallery;
+  
 
   constructor() {}
 
