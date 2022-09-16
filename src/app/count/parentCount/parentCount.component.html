@@ -1,0 +1,11 @@
+<div class="row border">
+    <div class="col">
+        Parent Count !
+        {{outputNum}}
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+        <childCount [resetNum]="countNumber" (count)="increaseParentNumber($event)"></childCount>
+    </div>
+</div>

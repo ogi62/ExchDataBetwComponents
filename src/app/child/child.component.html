@@ -1,0 +1,13 @@
+<div class="container border">
+  <h1>Child</h1>
+  <p>
+    {{ name }} is {{ old }} and he lives in {{ cityName }},
+    {{ countryName }} and he is very happy :) !
+  </p>
+  <div class="form-group">
+    <label for="petName" class="form-label"></label>
+    <input type="text" class="form-input" placeholder="Type the pet name ..." #petName/>
+    <button class="btn btn-success" type="button" (click)="childChangePetName(petName.value)">Click</button>
+    <button class="btn btn-warning" type="button" (click)="clearPetName(petName)">Clear</button>
+  </div>
+</div>
