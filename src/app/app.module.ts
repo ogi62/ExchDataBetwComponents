@@ -15,6 +15,9 @@ import { ExampleOneComponent } from './example1/example1.component';
 import { ExampleFourComponent } from './example4/example4.component';
 import { University } from './example4/university/university.component';
 import { Student } from './example4/student/student.component';
+import { ExampleViewChildComponent } from './exampleviewChild/exampleviewChild.component';
+import { ParentAppComponent } from './exampleviewChild/parentApp/parentApp.component';
+import { GalleryChildComponent } from './exampleviewChild/galleryChild/galleryChild.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { Student } from './example4/student/student.component';
     EditCustomerComponent,
     ExampleFourComponent,
     University,
-    Student
+    Student,
+    ExampleViewChildComponent,
+    ParentAppComponent,
+    GalleryChildComponent
   ],
   imports: [
     BrowserModule,
