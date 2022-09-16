@@ -1,3 +1,10 @@
 <div>
-    <gallery-child></gallery-child>
+  <div class="container d-flex justify-content-center m-5">
+    <div class="btn-group">
+      <button class="btn btn-primary" (click)="addImg()">Add New Picture</button>
+      <button class="btn btn-danger" (click)="removeFirstImg()">Delete First Picture</button>
+    </div>
+  </div>
+
+  <gallery-child></gallery-child>
 </div>

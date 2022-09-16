@@ -1,3 +1,5 @@
-<div class="container">
-  <img class="img-thumbnail" *ngFor="let pic of pictures" src="{{ pic }}" alt="{{ pic }}" />
+<div class="container con-flex">
+  <div class="container w10" *ngFor="let pic of pictures">
+    <img class="img-thumbnail hover-shadow"  src="{{ pic }}" alt="{{ pic }}" />
+  </div>
 </div>
