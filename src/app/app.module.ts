@@ -20,7 +20,7 @@ import { ParentAppComponent } from './exampleviewChild/parentApp/parentApp.compo
 import { GalleryChildComponent } from './exampleviewChild/galleryChild/galleryChild.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -35,9 +35,6 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     CustomersComponent,
     CustomersListComponent,
     EditCustomerComponent,
-    ExampleFourComponent,
-    University,
-    Student,
     ExampleViewChildComponent,
     ParentAppComponent,
     GalleryChildComponent

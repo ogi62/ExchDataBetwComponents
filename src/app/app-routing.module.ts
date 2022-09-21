@@ -33,7 +33,9 @@ const routes: Routes = [
     data: {
       title: 'Example 4'
     },
-    component: ExampleFourComponent
+    loadChildren: () => import('./example4/example4.module').then(
+      (m) => m.ExampleFourModule
+    )
   },
   {
     path: 'exampleViewChild',
