@@ -26,15 +26,6 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ExampleOneComponent,
-    ParentComponent,
-    ChildComponent,
-    CountComponent,
-    ParentCountComponent,
-    ChildCountComponent,
-    CustomersComponent,
-    CustomersListComponent,
-    EditCustomerComponent,
   ],
   imports: [
     BrowserModule,

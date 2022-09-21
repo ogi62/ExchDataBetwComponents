@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { navLinks } from './shared/models/navLinks.model';
 
 @Component({
   selector: 'app-root',

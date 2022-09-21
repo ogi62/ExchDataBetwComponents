@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { navLinks } from '../../models/navLinks.model';
+import { NavbarService } from './navbar.service';
+
+export interface Link {
+  path: string;
+  Title: string;
+}
 
 @Component({
   selector: 'navbar',
@@ -6,12 +13,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+   Links = [];
 
 
-  constructor( ) { 
+  constructor( 
+    private navbarService: NavbarService
+  ) { 
   }
 
   ngOnInit(): void {
+    this.Links = this.navbarService.createNavLinks();
   }
 
 }

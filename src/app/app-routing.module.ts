@@ -8,25 +8,13 @@ import { ExampleViewChildComponent } from './exampleviewChild/exampleviewChild.c
 
 const routes: Routes = [
   {
-    path: 'home-page',
+    path: 'input-output-examples',
     data: {
       title: 'Home Page',
     },
-    component: ExampleOneComponent,
-  },
-  {
-    path: 'example2',
-    data: {
-        title: 'Example 2'
-    },
-    component: CountComponent
-  },
-  {
-    path: 'example3',
-    data: {
-      title: 'Example 3'
-    },
-    component: CustomersComponent
+    loadChildren: () => import('./example1/exampleOne.module').then(
+      (m) => m.ExampleOneModule
+    )
   },
   {
     path: 'example4',
