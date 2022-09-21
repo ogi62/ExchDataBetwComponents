@@ -42,7 +42,9 @@ const routes: Routes = [
     data: {
       title: 'Example View Child'
     },
-    component: ExampleViewChildComponent
+    loadChildren: ()=> import('./exampleviewChild/exampleviewChild.module').then(
+      (m)=> m.ExampleViewChildModule
+    )
   },
   {
     path: '',

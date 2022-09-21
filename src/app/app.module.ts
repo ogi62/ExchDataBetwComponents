@@ -35,9 +35,6 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
     CustomersComponent,
     CustomersListComponent,
     EditCustomerComponent,
-    ExampleViewChildComponent,
-    ParentAppComponent,
-    GalleryChildComponent
   ],
   imports: [
     BrowserModule,
