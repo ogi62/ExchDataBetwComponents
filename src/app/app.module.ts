@@ -18,6 +18,8 @@ import { Student } from './example4/student/student.component';
 import { ExampleViewChildComponent } from './exampleviewChild/exampleviewChild.component';
 import { ParentAppComponent } from './exampleviewChild/parentApp/parentApp.component';
 import { GalleryChildComponent } from './exampleviewChild/galleryChild/galleryChild.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { GalleryChildComponent } from './exampleviewChild/galleryChild/galleryCh
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
