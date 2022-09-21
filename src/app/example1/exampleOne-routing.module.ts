@@ -1,13 +1,39 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { CountComponent } from "../count/count.component";
+import { CustomersComponent } from "../customers/customers.component";
 import { ExampleOneComponent } from "./example1.component";
+import { ParentComponent } from "./parent/parent.component";
 
 const routes: Routes = [
 {    path: '',
     data: {
         title: 'Home'
     },
-    component: ExampleOneComponent
+    component: ExampleOneComponent,
+    children: [
+        {
+            path: '',
+            data: {
+                title: 'Parent Example'
+            },
+            component: ParentComponent
+        },
+        {
+            path: 'count',
+            component: CountComponent,
+            data: {
+                title: 'Count Example'
+            }
+        },
+        {
+            path: 'customers',
+            component: CustomersComponent,
+            data: {
+                title: 'Customers Example'
+            }
+        }
+    ]
 }
 ]
 @NgModule({

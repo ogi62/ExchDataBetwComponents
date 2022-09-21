@@ -21,6 +21,7 @@ import { GalleryChildComponent } from './exampleviewChild/galleryChild/galleryCh
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { SubmenuService } from './shared/components/submenu/service/submenu.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,10 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  exports: [
+    NavbarComponent
+  ],
+  providers: [SubmenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
