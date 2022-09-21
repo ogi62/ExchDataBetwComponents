@@ -11,6 +11,10 @@ export class SubmenuService {
     createSubMenuLinks() {
         this.subMenuLinks = [
             {
+                link: subMenuLinks.PARENT_FIRST_EXAMPLE,
+                title: subMenuTitles.PARENT_FIRST_EXAMPLE
+            },
+            {
                 link: subMenuLinks.COUNT_LINK,
                 title: subMenuTitles.COUNT_TITLE
             },
