@@ -20,10 +20,12 @@ import { ParentAppComponent } from './exampleviewChild/parentApp/parentApp.compo
 import { GalleryChildComponent } from './exampleviewChild/galleryChild/galleryChild.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     ExampleOneComponent,
     ParentComponent,
     ChildComponent,
