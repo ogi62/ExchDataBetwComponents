@@ -35,6 +35,15 @@ const routes: Routes = [
     )
   },
   {
+    path: 'servicesExample',
+    data: {
+      title: 'Services Example'
+    },
+    loadChildren: ()=> import('./features/servicesExamples/servicesExample.module').then(
+      m => m.ServicesExampleModule
+    )
+  },
+  {
     path: '',
     component: ExampleOneComponent
   },

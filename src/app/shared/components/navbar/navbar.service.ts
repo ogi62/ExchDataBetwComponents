@@ -21,6 +21,10 @@ export class NavbarService {
             {
                 link: navLinks.EXAMPLE_VIEW_CHILD,
                 title: navTitles.EXAMPLE_VIEW_CHILD
+            },
+            {
+                link: navLinks.SERVICES_EXAMPLE,
+                title: navTitles.SERVICES_EXAMPLE
             }
         ]
 
