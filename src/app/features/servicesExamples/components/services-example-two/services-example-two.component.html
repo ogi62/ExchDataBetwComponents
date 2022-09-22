@@ -1,1 +1,6 @@
-<p>services-example-two works!</p>
+<div *ngFor="let product of products">
+    <div class="product">
+        {{product.productName}}
+        {{product.price | currency: 'USD':'symbol'}}
+    </div>
+</div>
