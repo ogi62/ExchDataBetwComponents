@@ -22,7 +22,7 @@ import { CommonModule } from "@angular/common";
 ],
     imports: [
         ServicesExampleRoutingModule,
-        CommonModule
+        CommonModule,
     ],
     exports: [],
     providers: [SubmenuServicesService]
