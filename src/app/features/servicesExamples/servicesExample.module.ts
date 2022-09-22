@@ -6,6 +6,7 @@ import { ServicesExampleTwoComponent } from './components/services-example-two/s
 import { ServicesExampleThreeComponent } from './components/services-example-three/services-example-three.component';
 import { ServicesExampleFourComponent } from './components/services-example-four/services-example-four.component';
 import { ServicesExampleFiveComponent } from './components/services-example-five/services-example-five.component';
+import { ServicesSubmenuComponent } from './components/services-submenu/services-submenu.component';
 
 @NgModule({
     declarations: [
@@ -14,8 +15,9 @@ import { ServicesExampleFiveComponent } from './components/services-example-five
     ServicesExampleTwoComponent,
     ServicesExampleThreeComponent,
     ServicesExampleFourComponent,
-    ServicesExampleFiveComponent
-  ],
+    ServicesExampleFiveComponent,
+    ServicesSubmenuComponent
+],
     imports: [
         ServicesExampleRoutingModule
     ],
