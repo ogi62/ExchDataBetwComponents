@@ -13,7 +13,7 @@ const routes: Routes = [
     component: ExampleOneComponent,
     children: [
         {
-            path: '',
+            path: 'input-output-examples',
             data: {
                 title: 'Parent Example'
             },
