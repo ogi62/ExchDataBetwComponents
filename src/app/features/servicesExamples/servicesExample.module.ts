@@ -7,6 +7,8 @@ import { ServicesExampleThreeComponent } from './components/services-example-thr
 import { ServicesExampleFourComponent } from './components/services-example-four/services-example-four.component';
 import { ServicesExampleFiveComponent } from './components/services-example-five/services-example-five.component';
 import { ServicesSubmenuComponent } from './components/services-submenu/services-submenu.component';
+import { SubmenuServicesService } from "./services/submenu-services.service";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     declarations: [
@@ -19,8 +21,10 @@ import { ServicesSubmenuComponent } from './components/services-submenu/services
     ServicesSubmenuComponent
 ],
     imports: [
-        ServicesExampleRoutingModule
+        ServicesExampleRoutingModule,
+        CommonModule
     ],
-    exports: []
+    exports: [],
+    providers: [SubmenuServicesService]
 })
 export class ServicesExampleModule {}
