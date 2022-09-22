@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "prodcutName": "Shirt",
+        "price": 4.5
+    },
+    {
+        "id": 2,
+        "prodcutName": "Shoes",
+        "price": 12.4
+    },
+    {
+        "id": 3,
+        "prodcutName": "Soccer Ball",
+        "price": 3.5
+    },
+    {
+        "id": 4,
+        "prodcutName": "Jacket",
+        "price": 18.5
+    },
+    {
+        "id": 5,
+        "prodcutName": "Sneakers",
+        "price": 16.7
+    }
+]
