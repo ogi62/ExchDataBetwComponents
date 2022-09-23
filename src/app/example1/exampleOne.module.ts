@@ -10,10 +10,10 @@ import { CustomersComponent } from "../customers/customers.component";
 import { EditCustomerComponent } from "../customers/editCustomer/editCustomer.component";
 import { NavbarComponent } from "../shared/components/navbar/navbar.component";
 import { SubmenuComponent } from "../shared/components/submenu/submenu.component";
-import { ChildComponent } from "./child/child.component";
+import { ChildComponent } from "./components/child/child.component";
 import { ExampleOneComponent } from "./example1.component";
 import { ExampleOneRoutingModule } from "./exampleOne-routing.module";
-import { ParentComponent } from "./parent/parent.component";
+import { ParentComponent } from "./components/parent/parent.component";
 
 @NgModule({
     declarations:[

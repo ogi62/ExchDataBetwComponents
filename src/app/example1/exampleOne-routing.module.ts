@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { CountComponent } from "../count/count.component";
 import { CustomersComponent } from "../customers/customers.component";
 import { ExampleOneComponent } from "./example1.component";
-import { ParentComponent } from "./parent/parent.component";
+import { ParentComponent } from "./components/parent/parent.component";
 
 const routes: Routes = [
 {    path: '',
