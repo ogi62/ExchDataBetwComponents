@@ -1,10 +1,16 @@
 <div class="container">
-    <button class="btn btn-warning">
+    <button 
+    class="btn btn-warning"
+    #mainBtn
+    (click)="openModal()"
+    >
         Click on a button
     </button>
-    <div class="container">
+    <div class="p-3 bg-dark text-danger absoluteP" *ngIf="showModal">
         Are you sure you want to click on this button !
-        <button>Yes</button>
-        <button>No</button>
+        <div class="btn-group">
+            <button class="btn btn-danger" (click)="hideBtn()">Yes</button>
+            <button class="btn btn-warning" (click)="closeModal()">No</button>
+        </div>     
     </div>
 </div>
