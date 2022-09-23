@@ -15,7 +15,9 @@ export class LinkViewChildComponent implements OnInit {
 
   changeLinkColor() {
     console.log(this.linkEl);
-    this.linkEl.nativeElement.innerText = 'You clicked the button';
+    // this.linkEl.nativeElement.innerText = 'You clicked the button';
+    this.linkEl.nativeElement.hidden = true;
+
   }
 
 }
