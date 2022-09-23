@@ -5,13 +5,15 @@ import { ExampleViewChildComponent } from "./exampleviewChild.component";
 import { GalleryChildComponent } from "./galleryChild/galleryChild.component";
 import { ParentAppComponent } from "./parentApp/parentApp.component";
 import { LinkViewChildComponent } from './linkViewChild/link-view-child/link-view-child.component';
+import { ButtonExampleComponent } from './buttonExample/button-example/button-example.component';
 
 @NgModule({
     declarations:[
         ExampleViewChildComponent,
         GalleryChildComponent,
         ParentAppComponent,
-        LinkViewChildComponent
+        LinkViewChildComponent,
+        ButtonExampleComponent
     ],
     imports: [
         CommonModule,
