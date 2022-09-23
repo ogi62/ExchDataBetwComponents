@@ -6,6 +6,8 @@ import { GalleryChildComponent } from "./galleryChild/galleryChild.component";
 import { ParentAppComponent } from "./parentApp/parentApp.component";
 import { LinkViewChildComponent } from './linkViewChild/link-view-child/link-view-child.component';
 import { ButtonExampleComponent } from './buttonExample/button-example/button-example.component';
+import { FourthExampleComponent } from './fourth-example/fourth-example.component';
+import { FourthExampleChildComponent } from './fourth-example/components/fourth-example-child/fourth-example-child.component';
 
 @NgModule({
     declarations:[
@@ -13,7 +15,9 @@ import { ButtonExampleComponent } from './buttonExample/button-example/button-ex
         GalleryChildComponent,
         ParentAppComponent,
         LinkViewChildComponent,
-        ButtonExampleComponent
+        ButtonExampleComponent,
+        FourthExampleComponent,
+        FourthExampleChildComponent
     ],
     imports: [
         CommonModule,
