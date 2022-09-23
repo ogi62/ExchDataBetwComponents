@@ -1,17 +1,15 @@
 <div class="container border">
   Example 1.
-    <h1>Parent</h1>
-    <div class="row">
-        <h3 class="mx-5">Hello my name is {{ name }}</h3>
-        <h3>My pet name is {{ petName }}</h3>
-    </div>
-    <child
-      [name]="name"
-      [old]="old"
-      [cityName]="city"
-      [countryName]="country"
-      (petName)="changePetName($event)"
-    ></child>
+  <h1>Parent</h1>
+  <div class="row">
+    <h3 class="mx-5">Hello my name is {{ name }}</h3>
+    <h3>My pet name is {{ petName }}</h3>
   </div>
-
-    
+  <child
+    [name]="name"
+    [old]="old"
+    [cityName]="city"
+    [countryName]="country"
+    (petName)="changePetName($event)"
+  ></child>
+</div>

@@ -8,7 +8,6 @@ import { GalleryChildComponent } from './components/galleryChild/galleryChild.co
 })
 export class ParentAppComponent {
   @ViewChild(GalleryChildComponent) gallery;
-  
 
   constructor() {}
 

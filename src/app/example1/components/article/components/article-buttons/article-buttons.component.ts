@@ -3,16 +3,15 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 @Component({
   selector: 'article-buttons',
   templateUrl: './article-buttons.component.html',
-  styleUrls: ['./article-buttons.component.css']
+  styleUrls: ['./article-buttons.component.css'],
 })
 export class ArticleButtonsComponent implements OnInit {
   @Output() showArt = new EventEmitter<boolean>();
   @Input() articleMsg: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   showBtn() {
     this.showArt.emit(true);
@@ -21,5 +20,4 @@ export class ArticleButtonsComponent implements OnInit {
   hideBtn() {
     this.showArt.emit(false);
   }
-
 }

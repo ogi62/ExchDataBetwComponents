@@ -6,13 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent.component.scss'],
 })
 export class ParentComponent {
-    name: string = 'Petar';
-    old: number = 25;
-    city: string = 'Belgrade';
-    country: string = 'Serbia';
-    petName: string;
+  name: string = 'Petar';
+  old: number = 25;
+  city: string = 'Belgrade';
+  country: string = 'Serbia';
+  petName: string;
 
-    changePetName(pet: string) {
-        this.petName = pet;
-    }
+  changePetName(pet: string) {
+    this.petName = pet;
+  }
 }

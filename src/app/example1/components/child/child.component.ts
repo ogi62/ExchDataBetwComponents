@@ -13,8 +13,8 @@ export class ChildComponent {
   @Output() petName = new EventEmitter<string>();
 
   childChangePetName(pet: string) {
-    if(!pet) {
-        return;
+    if (!pet) {
+      return;
     }
     this.petName.emit(pet);
   }

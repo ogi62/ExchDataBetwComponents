@@ -7,7 +7,7 @@ import { Customer } from '../models/customer';
   styleUrls: ['./customersList.component.scss'],
 })
 export class CustomersListComponent {
-    selectedCustomer: Customer;
+  selectedCustomer: Customer;
   customers: Customer[] = [
     {
       customerNo: 1,
@@ -52,13 +52,15 @@ export class CustomersListComponent {
   ];
 
   showDetails(customer) {
-    this.selectedCustomer=Object.assign({},customer)
+    this.selectedCustomer = Object.assign({}, customer);
   }
 
   childChangedCustomer(customer: Customer) {
-    const cust=this.customers.find(e => e.customerNo==customer.customerNo);
+    const cust = this.customers.find(
+      (e) => e.customerNo == customer.customerNo
+    );
     //menjamo objekat stavljamo cust umesto customera
-    Object.assign(cust,customer);
-    alert("Customer Saved");
+    Object.assign(cust, customer);
+    alert('Customer Saved');
   }
 }

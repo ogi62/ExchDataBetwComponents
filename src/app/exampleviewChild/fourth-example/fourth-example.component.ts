@@ -4,17 +4,16 @@ import { FourthExampleChildComponent } from './components/fourth-example-child/f
 @Component({
   selector: 'fourth-example',
   templateUrl: './fourth-example.component.html',
-  styleUrls: ['./fourth-example.component.css']
+  styleUrls: ['./fourth-example.component.css'],
 })
 export class FourthExampleComponent implements OnInit {
   @ViewChild(FourthExampleChildComponent) pRef;
   @ViewChild('btn') btnRef: ElementRef;
   parentText: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   sendPfromChildToParent() {
     this.pRef.changeColor();
@@ -22,5 +21,4 @@ export class FourthExampleComponent implements OnInit {
     this.btnRef.nativeElement.disabled = true;
     // this.pRef.parRef.nativeElement.innerText = '';
   }
-
 }
