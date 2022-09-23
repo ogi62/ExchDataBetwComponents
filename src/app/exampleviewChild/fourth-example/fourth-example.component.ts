@@ -8,6 +8,7 @@ import { FourthExampleChildComponent } from './components/fourth-example-child/f
 })
 export class FourthExampleComponent implements OnInit {
   @ViewChild(FourthExampleChildComponent) pRef;
+  @ViewChild('btn') btnRef: ElementRef;
   parentText: string;
 
   constructor() { }
@@ -18,6 +19,7 @@ export class FourthExampleComponent implements OnInit {
   sendPfromChildToParent() {
     this.pRef.changeColor();
     this.parentText = this.pRef.parRef.nativeElement.innerText;
+    this.btnRef.nativeElement.disabled = true;
     // this.pRef.parRef.nativeElement.innerText = '';
   }
 
