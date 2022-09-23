@@ -18,7 +18,7 @@ import { SubmenuService } from './shared/components/submenu/service/submenu.serv
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   exports: [
     NavbarComponent
