@@ -1,0 +1,15 @@
+<div *ngIf="showArticle">
+    <h2>This is some article !</h2>
+    <h5>Subheading of article</h5>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro similique
+    quam fuga ut cum temporibus recusandae quod unde, nulla ea corrupti est
+    explicabo quaerat iusto omnis in laudantium nihil maiores!
+  </p>
+  <a href="#">Go to the article</a>
+</div>
+<article-buttons
+[articleMsg]="showArticle ? 'Article showing' : 'Article hidding'"  
+(showArt)="seeArticle($event)" 
+(hideBtn)="hideArticle($event)"
+></article-buttons>

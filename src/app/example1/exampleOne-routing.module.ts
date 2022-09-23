@@ -4,6 +4,7 @@ import { CountComponent } from "../count/count.component";
 import { CustomersComponent } from "../customers/customers.component";
 import { ExampleOneComponent } from "./example1.component";
 import { ParentComponent } from "./components/parent/parent.component";
+import { ArticleComponent } from "./components/article/article.component";
 
 const routes: Routes = [
 {    path: '',
@@ -31,6 +32,13 @@ const routes: Routes = [
             component: CustomersComponent,
             data: {
                 title: 'Customers Example'
+            }
+        },
+        {
+            path:'article',
+            component: ArticleComponent,
+            data:{
+                title: 'Article Example'
             }
         }
     ]

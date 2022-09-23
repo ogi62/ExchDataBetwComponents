@@ -14,6 +14,8 @@ import { ChildComponent } from "./components/child/child.component";
 import { ExampleOneComponent } from "./example1.component";
 import { ExampleOneRoutingModule } from "./exampleOne-routing.module";
 import { ParentComponent } from "./components/parent/parent.component";
+import { ArticleComponent } from './components/article/article.component';
+import { ArticleButtonsComponent } from './components/article/components/article-buttons/article-buttons.component';
 
 @NgModule({
     declarations:[
@@ -26,7 +28,9 @@ import { ParentComponent } from "./components/parent/parent.component";
         CountComponent,
         ChildCountComponent,
         ParentCountComponent,
-        SubmenuComponent
+        SubmenuComponent,
+        ArticleComponent,
+        ArticleButtonsComponent
     ],
     imports: [
         CommonModule,

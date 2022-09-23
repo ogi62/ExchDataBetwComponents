@@ -21,6 +21,10 @@ export class SubmenuService {
             {
                 link: subMenuLinks.CUSTOMERS,
                 title: subMenuTitles.CUSTOMERS_TITLE
+            },
+            {
+                link: subMenuLinks.ARTICLE,
+                title: subMenuTitles.ARTICLE
             }
         ]
 
