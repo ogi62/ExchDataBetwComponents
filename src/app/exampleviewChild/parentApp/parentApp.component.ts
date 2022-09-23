@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { GalleryChildComponent } from '../galleryChild/galleryChild.component';
+import { GalleryChildComponent } from './components/galleryChild/galleryChild.component';
 
 @Component({
   selector: 'parent-app',
