@@ -1,3 +1,6 @@
 <div class="container" *ngFor="let course of (courses$ | async)">
 {{course.description}}
 </div>
+<div class="container bg-primary" *ngFor="let begginerCourse of (begginerCourses$ | async)">
+{{begginerCourse.description}}
+</div>

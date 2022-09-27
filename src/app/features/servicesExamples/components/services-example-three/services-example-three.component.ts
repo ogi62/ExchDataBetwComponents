@@ -10,11 +10,13 @@ import { ProductsExampleThreeService } from '../../services/products-example-thr
 })
 export class ServicesExampleThreeComponent implements OnInit {
   courses$ : Observable<Course[]>;
+  begginerCourses$: Observable<Course[]>;
 
   constructor(private productsExampleThreeService: ProductsExampleThreeService) { }
 
   ngOnInit(): void {
    this.courses$ = this.productsExampleThreeService.loadAllCourses();
+   this.begginerCourses$ = this.productsExampleThreeService.loadBeginnerCourses();
   }
 
   
