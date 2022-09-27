@@ -1,12 +1,18 @@
 <nav class="p-3 bg-primary">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <!-- <li><a routerLink="input-output-examples" class="nav-link px-2 text-white">Input/Output Examples</a></li>
-          <li><a routerLink="example4" class="nav-link px-2 text-white">Example 4</a></li>
-          <li><a routerLink="exampleViewChild" class="nav-link px-2 text-white">Example ViewChild</a></li> -->
-          <li *ngFor="let submenu of subMenuLinks"><a routerLink={{submenu.link}} class="nav-link px-2 text-white">{{submenu.title}}</a></li>
-        </ul>
-      </div>
+  <div class="container">
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+    >
+      <ul
+        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+        *ngFor="let submenu of subMenuLinks"
+      >
+        <li>
+          <a routerLink="{{ submenu.link }}" class="nav-link px-2 text-white">{{
+            submenu.title
+          }}</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
