@@ -30,5 +30,18 @@ export class ProductsExampleThreeService {
       })
     );
   }
+
+  loadAdvancedCourses(): Observable<Course[]> {
+    return this.http.get<Course[]>(this.productUrl).pipe(
+      map(
+        res => res.filter(course => course.category == 'ADVANCED')
+      ),
+      catchError((err) => {
+        const message = 'Unable to show advanced courses';
+        console.log(err, message);
+        return throwError(err.message);
+      })
+    )
+  }
   
 }
