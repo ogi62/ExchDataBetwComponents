@@ -16,9 +16,9 @@ export class ProductsService {
   ) { }
 
   getProdcuts(): Observable<Product[]> {
-    if(this.products) {
-      return of(this.products);
-    }
+    // if(this.products) {
+    //   return of(this.products);
+    // }
     return this.httpClient.get<Product[]>(this.productUrl).pipe(
       tap((data) => console.log(JSON.stringify(data))),
       tap((data) => (this.products = data)),
