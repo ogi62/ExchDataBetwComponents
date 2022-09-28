@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductsService } from 'src/app/features/servicesExamples/services/productsService/products.service';
+import { Product } from 'src/app/shared/models/product';
 
 @Component({
   selector: 'single-product',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleProductComponent implements OnInit {
 
-  constructor() { }
+  get product(): Product {
+    return this.productsService.currentProduct;
+  }
+
+  constructor(
+    private productsService: ProductsService
+  ) { }
 
   ngOnInit(): void {
   }

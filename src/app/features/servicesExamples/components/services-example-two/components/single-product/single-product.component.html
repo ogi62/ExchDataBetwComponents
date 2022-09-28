@@ -1,1 +1,9 @@
-<p>single-product works!</p>
+<div class="card">
+    <div *ngIf="product">
+        {{product.productName}}
+        {{product.price}}
+    </div>
+    <div *ngIf="!product">
+        <p>None item selected</p>
+    </div>
+</div>

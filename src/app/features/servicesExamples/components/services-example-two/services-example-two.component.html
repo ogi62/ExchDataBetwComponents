@@ -1,7 +1,7 @@
 <div *ngFor="let product of products">
-    <div class="product">
+    <div class="product" (click)="onProductSelection(product)">
         {{product.productName}}
         {{product.price | currency: 'USD':'symbol'}}
     </div>
-    <single-product></single-product>
 </div>
+<single-product></single-product>
