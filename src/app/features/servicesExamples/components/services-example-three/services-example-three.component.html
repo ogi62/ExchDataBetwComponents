@@ -1,11 +1,9 @@
-<div class="container" *ngFor="let course of (courses$ | async)">
-<p>{{course.description}}</p>
-</div>
-<h2 class="text-center">Beginner Courses</h2>
-<div class="container bg-primary" *ngFor="let begginerCourse of (begginerCourses$ | async)">
-<p>{{begginerCourse.description}}</p>
-</div>
-<h2 class="text-center">Advanced Courses</h2>
-<div class="container bg-danger" *ngFor="let advancedCourse of (advancedCourses$ | async)">
-<p>{{advancedCourse.description}}</p>
-</div>
+<course-list [title]="'All courses'" [courses]="courses$ | async"></course-list>
+<course-list
+  [title]="'Beginner Courses'"
+  [courses]="begginerCourses$ | async"
+></course-list>
+<course-list
+  [title]="'Advanced Courses'"
+  [courses]="advancedCourses$ | async"
+></course-list>

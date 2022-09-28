@@ -6,14 +6,16 @@ import { ProductsExampleThreeService } from '../../services/products-example-thr
 @Component({
   selector: 'app-services-example-three',
   templateUrl: './services-example-three.component.html',
-  styleUrls: ['./services-example-three.component.css']
+  styleUrls: ['./services-example-three.component.css'],
 })
 export class ServicesExampleThreeComponent implements OnInit {
-  courses$ : Observable<Course[]>;
+  courses$: Observable<Course[]>;
   begginerCourses$: Observable<Course[]>;
   advancedCourses$: Observable<Course[]>;
 
-  constructor(private productsExampleThreeService: ProductsExampleThreeService) { }
+  constructor(
+    private productsExampleThreeService: ProductsExampleThreeService
+  ) {}
 
   //1.first way of doing http which is not good because we have 3 functions which do the same thing ...
   // ngOnInit(): void {
@@ -22,9 +24,10 @@ export class ServicesExampleThreeComponent implements OnInit {
   //  this.advancedCourses$ = this.productsExampleThreeService.loadAdvancedCourses();
   // }
 
-  // onlu one http req... 
+  // only one http req...
   ngOnInit(): void {
     this.courses$ = this.productsExampleThreeService.loadAllCourses();
+    this.courses$.subscribe((res) => console.log(res));
     this.begginerCourses$ = this.courses$.pipe(
       map((courses) =>
         courses.filter((course) => course.category == 'BEGINNER')
