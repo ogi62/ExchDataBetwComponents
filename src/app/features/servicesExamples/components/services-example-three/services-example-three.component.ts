@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Course } from 'src/app/shared/models/course.model';
 import { ProductsExampleThreeService } from '../../services/products-example-three/products-example-three.service';
 
@@ -15,12 +15,25 @@ export class ServicesExampleThreeComponent implements OnInit {
 
   constructor(private productsExampleThreeService: ProductsExampleThreeService) { }
 
-  ngOnInit(): void {
-   this.courses$ = this.productsExampleThreeService.loadAllCourses();
-   this.begginerCourses$ = this.productsExampleThreeService.loadBeginnerCourses();
-   this.advancedCourses$ = this.productsExampleThreeService.loadAdvancedCourses();
-  }
-
+  //1.nacin 3 puta fecuj sa 3 razlicite funkcije koje rade slicnu stvar
+  // ngOnInit(): void {
+  //  this.courses$ = this.productsExampleThreeService.loadAllCourses();
+  //  this.begginerCourses$ = this.productsExampleThreeService.loadBeginnerCourses();
+  //  this.advancedCourses$ = this.productsExampleThreeService.loadAdvancedCourses();
+  // }
   
-
+  // onlu one http req... 
+  ngOnInit(): void {
+    this.courses$ = this.productsExampleThreeService.loadAllCourses();
+    this.begginerCourses$ = this.courses$.pipe(
+      map((courses) =>
+        courses.filter((course) => course.category == 'BEGINNER')
+      )
+    );
+    this.advancedCourses$ = this.courses$.pipe(
+      map((courses) =>
+        courses.filter((course) => course.category == 'ADVANCED')
+      )
+    );
+  }
 }
