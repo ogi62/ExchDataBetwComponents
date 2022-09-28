@@ -12,7 +12,7 @@ export class ProductsExampleThreeService {
 
 
   constructor(private http: HttpClient) { }
-  //1.moj nacin ...  koji 3 puta radi http request u networku sto nije dobro 
+  //1.First solution which is not good because it make three request at the same time with three func which are prety similar ...
 
   // loadAllCourses():Observable<Course[]> {
   //   return this.http.get<Course[]>(this.productUrl);

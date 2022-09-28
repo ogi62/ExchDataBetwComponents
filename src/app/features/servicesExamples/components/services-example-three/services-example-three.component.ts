@@ -15,13 +15,13 @@ export class ServicesExampleThreeComponent implements OnInit {
 
   constructor(private productsExampleThreeService: ProductsExampleThreeService) { }
 
-  //1.nacin 3 puta fecuj sa 3 razlicite funkcije koje rade slicnu stvar
+  //1.first way of doing http which is not good because we have 3 functions which do the same thing ...
   // ngOnInit(): void {
   //  this.courses$ = this.productsExampleThreeService.loadAllCourses();
   //  this.begginerCourses$ = this.productsExampleThreeService.loadBeginnerCourses();
   //  this.advancedCourses$ = this.productsExampleThreeService.loadAdvancedCourses();
   // }
-  
+
   // onlu one http req... 
   ngOnInit(): void {
     this.courses$ = this.productsExampleThreeService.loadAllCourses();
