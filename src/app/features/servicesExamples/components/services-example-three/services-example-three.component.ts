@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Course } from 'src/app/shared/models/course.model';
-import { ProductsExampleThreeService } from '../../services/products-example-three.service';
+import { ProductsExampleThreeService } from '../../services/products-example-three/products-example-three.service';
 
 @Component({
   selector: 'app-services-example-three',
