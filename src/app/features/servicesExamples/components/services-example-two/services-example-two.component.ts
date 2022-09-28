@@ -23,4 +23,8 @@ export class ServicesExampleTwoComponent implements OnInit {
     );
   }
 
+  onProductSelection(product: Product): void {
+    this.productsService.currentProduct = product;
+  }
+
 }
