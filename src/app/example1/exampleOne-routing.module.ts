@@ -42,6 +42,11 @@ const routes: Routes = [
           title: 'Article Example',
         },
       },
+      {
+        path: '',
+        redirectTo: 'input-output-examples',
+        pathMatch: 'full'
+      }
     ],
   },
 ];

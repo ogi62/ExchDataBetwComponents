@@ -39,6 +39,11 @@ const routes: Routes = [
         path: 'services-example-five',
         component: ServicesExampleFiveComponent,
       },
+      {
+        path: '',
+        redirectTo: 'services-example-one',
+        pathMatch: 'full'
+      }
     ],
   },
 ];
