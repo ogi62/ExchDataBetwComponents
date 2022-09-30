@@ -27,7 +27,6 @@ export class ServicesExampleThreeComponent implements OnInit {
   // only one http req...
   ngOnInit(): void {
     this.courses$ = this.productsExampleThreeService.loadAllCourses();
-    this.courses$.subscribe((res) => console.log(res));
     this.begginerCourses$ = this.courses$.pipe(
       map((courses) =>
         courses.filter((course) => course.category == 'BEGINNER')
