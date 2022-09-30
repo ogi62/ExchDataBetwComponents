@@ -11,6 +11,7 @@ import { SubmenuServicesService } from "./services/submenu-services.service";
 import { CommonModule } from "@angular/common";
 import { CourseListComponent } from './components/services-example-three/components/course-list/course-list.component';
 import { SingleProductComponent } from './components/services-example-two/components/single-product/single-product.component';
+import { LoadingComponent } from './components/services-example-four/components/loading/loading.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { SingleProductComponent } from './components/services-example-two/compon
     ServicesExampleFiveComponent,
     ServicesSubmenuComponent,
     CourseListComponent,
-    SingleProductComponent
+    SingleProductComponent,
+    LoadingComponent
 ],
     imports: [
         ServicesExampleRoutingModule,

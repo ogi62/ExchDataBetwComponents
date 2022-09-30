@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { finalize, map, Observable } from 'rxjs';
 import { Course } from 'src/app/shared/models/course.model';
 import { CoursesService } from '../../services/exampleFourService/courses.service';
+import { LoadingService } from '../../services/exampleFourService/loading.service';
 
 @Component({
   selector: 'app-services-example-four',
@@ -13,16 +14,22 @@ export class ServicesExampleFourComponent implements OnInit {
   beginnerCourses$: Observable<Course[]>;
   advancedCourses$: Observable<Course[]>;
 
-  constructor(private coursesService: CoursesService) { }
+  constructor(
+    private coursesService: CoursesService,
+    private loadingService:LoadingService
+    ) { }
 
   ngOnInit(): void {
     this.loadCourses();
   }
 
   loadCourses() {
-    const courses$ = this.coursesService.loadAllCourses();
+    this.loadingService.loadingOn();
+    const courses$ = this.coursesService.loadAllCourses().pipe(
+      finalize(()=> this.loadingService.loadingOff())
+    );
     this.beginnerCourses$ = courses$.pipe(
-      map(courses=> courses.filter(course => course.category == 'BEGINNER'))
+      map(courses=> courses.filter(course => course.category == 'BEGINNER')),
     );
     this.advancedCourses$ = courses$.pipe(
       map(courses=> courses.filter(course => course.category == 'ADVANCED'))
