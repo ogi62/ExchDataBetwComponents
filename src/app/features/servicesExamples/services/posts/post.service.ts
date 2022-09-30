@@ -4,16 +4,14 @@ import { Observable } from 'rxjs';
 import { Post } from 'src/app/shared/models/post.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PostService {
   private url = 'http://jsonplaceholder.typicode.com/posts';
 
-  constructor(
-    private http: HttpClient
-  ) { }
-  
-    //1.pokusaj
+  constructor(private http: HttpClient) {}
+
+  //1.pokusaj
   // getPosts() {
   //   return this.http.get(this.url);
   // }

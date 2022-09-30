@@ -7,17 +7,16 @@ import { LoadingService } from '../../services/exampleFourService/loading.servic
 @Component({
   selector: 'app-services-example-four',
   templateUrl: './services-example-four.component.html',
-  styleUrls: ['./services-example-four.component.css']
+  styleUrls: ['./services-example-four.component.css'],
 })
 export class ServicesExampleFourComponent implements OnInit {
-
   beginnerCourses$: Observable<Course[]>;
   advancedCourses$: Observable<Course[]>;
 
   constructor(
     private coursesService: CoursesService,
-    private loadingService:LoadingService
-    ) { }
+    private loadingService: LoadingService
+  ) {}
 
   ngOnInit(): void {
     this.loadCourses();
@@ -25,15 +24,18 @@ export class ServicesExampleFourComponent implements OnInit {
 
   loadCourses() {
     this.loadingService.loadingOn();
-    const courses$ = this.coursesService.loadAllCourses().pipe(
-      finalize(()=> this.loadingService.loadingOff())
-    );
+    const courses$ = this.coursesService
+      .loadAllCourses()
+      .pipe(finalize(() => this.loadingService.loadingOff()));
     this.beginnerCourses$ = courses$.pipe(
-      map(courses=> courses.filter(course => course.category == 'BEGINNER')),
+      map((courses) =>
+        courses.filter((course) => course.category == 'BEGINNER')
+      )
     );
     this.advancedCourses$ = courses$.pipe(
-      map(courses=> courses.filter(course => course.category == 'ADVANCED'))
+      map((courses) =>
+        courses.filter((course) => course.category == 'ADVANCED')
+      )
     );
   }
-
 }
