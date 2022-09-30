@@ -1,1 +1,10 @@
-<p>services-example-four works!</p>
+<div>
+    <h2>BEGINNER COURSES</h2>
+    <div *ngFor="let beginnerCourse of (beginnerCourses$ | async)">
+        {{beginnerCourse.description}}
+    </div>
+    <h2>ADVANCED COURSES</h2>
+    <div *ngFor="let advancedCourse of (advancedCourses$ | async)">
+        {{advancedCourse.description}}
+    </div>
+</div>
