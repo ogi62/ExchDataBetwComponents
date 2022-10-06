@@ -15,6 +15,7 @@ import { LoadingComponent } from './components/services-example-four/components/
 import { AllBooksComponent } from './components/services-example-five/components/all-books/all-books.component';
 import { SingleBookComponent } from './components/services-example-five/components/single-book/single-book.component';
 import { EditBooksComponent } from './components/services-example-five/components/edit-books/edit-books.component';
+import { BestSellersComponent } from './components/services-example-five/components/best-sellers/best-sellers.component';
 
 @NgModule({
     declarations: [
@@ -30,7 +31,8 @@ import { EditBooksComponent } from './components/services-example-five/component
     LoadingComponent,
     AllBooksComponent,
     SingleBookComponent,
-    EditBooksComponent
+    EditBooksComponent,
+    BestSellersComponent
 ],
     imports: [
         ServicesExampleRoutingModule,
