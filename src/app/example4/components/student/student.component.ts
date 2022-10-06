@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { StudentInterface } from '../models/Student';
+import { StudentInterface } from '../../models/Student';
 
 @Component({
   selector: 'student',
