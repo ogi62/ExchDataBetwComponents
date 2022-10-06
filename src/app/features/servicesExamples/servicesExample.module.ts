@@ -12,6 +12,9 @@ import { CommonModule } from "@angular/common";
 import { CourseListComponent } from './components/services-example-three/components/course-list/course-list.component';
 import { SingleProductComponent } from './components/services-example-two/components/single-product/single-product.component';
 import { LoadingComponent } from './components/services-example-four/components/loading/loading.component';
+import { AllBooksComponent } from './components/services-example-five/components/all-books/all-books.component';
+import { SingleBookComponent } from './components/services-example-five/components/single-book/single-book.component';
+import { EditBooksComponent } from './components/services-example-five/components/edit-books/edit-books.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +27,10 @@ import { LoadingComponent } from './components/services-example-four/components/
     ServicesSubmenuComponent,
     CourseListComponent,
     SingleProductComponent,
-    LoadingComponent
+    LoadingComponent,
+    AllBooksComponent,
+    SingleBookComponent,
+    EditBooksComponent
 ],
     imports: [
         ServicesExampleRoutingModule,
