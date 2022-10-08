@@ -1,1 +1,7 @@
-<p>all-books works!</p>
+<div class="books">
+    <div class="book" *ngFor="let book of (books$ | async)">
+        <h2 class="book-name">{{book.name}}</h2>
+        <img class="book-img" src={{book.cover}} alt={{book.name}}>
+        <button class="book-btn">Details</button>
+</div>
+</div>
